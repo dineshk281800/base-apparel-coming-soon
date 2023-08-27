@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* primary */
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+
+  /* Accent */
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+  /* Neutral */
+  --Linear-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --Linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.logo-box {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  padding: 3rem;
+}
+
+.logo {
+  width: 15rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: var(--Linear-one);
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.content-box {
+  width: 100%;
+  padding: 5rem 3rem 0;
+}
+
+.img-box {
+  width: 100%;
+  height: 30rem;
+  background-size: cover;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.topic {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--Desaturated-Red);
+  line-height: 4rem;
+  letter-spacing: 1rem;
+}
+
+.topic span {
+  color: var(--Dark-Grayish-Red);
+  font-weight: 700;
+}
+
+.para {
+  text-align: center;
+  max-width: 45rem;
+  color: var(--Desaturated-Red);
+  font-size: 2rem;
+  margin: 2rem auto 2rem;
+  line-height: 2.5rem;
+}
+
+.form {
+  position: relative;
+  display: block;
+  height: 6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.email {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 5rem;
+  padding-left: 3rem;
+  font-size: 2.3rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--Linear);
+}
+
+.email::placeholder {
+  color: rgba(206, 151, 151, 0.8);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  color: white;
+  width: 8rem;
+  height: 100%;
+  border-radius: 5rem;
+  background-image: var(--Linear);
+  box-shadow: 0px 7px 19px 1px #f5a9ab82;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background-image: linear-gradient(
+    135deg,
+    rgb(248, 191, 191),
+    rgba(231, 177, 177, 0.781)
+  );
+  box-shadow: 0px 7px 13px 2px #faadaebf;
+}
+
+.error-icon {
+  position: absolute;
+  right: 8.5rem;
+  top: 24%;
+  display: inline-block;
+  display: none;
+}
+.error-msg {
+  position: absolute;
+  left: 3rem;
+  top: 4rem;
+  font-size: 1rem;
+  display: none;
+}
+
+.error-icon,
+.error-text {
+  display: block;
+}
+input {
+  border: 2px solid hsl(0, 93%, 68%);
+}

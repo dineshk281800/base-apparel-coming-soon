@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <title>Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <div class="logo-box">
+      <img src="images/logo.svg" alt="logo" class="logo" />
+    </div>
+    <section class="container">
+      <div class="content-box">
+        <h1 class="topic">
+          We're <br /><span
+            >coming <br />
+            soon</span
+          >
+        </h1>
+        <p class="para">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form id="form" class="form" autocomplete="off">
+          <input
+            type="email"
+            name="email"
+            class="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <img
+            src="./images/icon-error.svg"
+            alt="error icon"
+            class="error-icon"
+          />
+          <button type="submit" class="btn">
+            <img
+              src="images/icon-arrow.svg"
+              alt="arrow-icon"
+              class="arrow-icon"
+            />
+          </button>
+          <p class="error-msg">Please provide a valid email</p>
+        </form>
+      </div>
+      <div class="img-box">
+        <picture>
+          <source
+            media="(min-width:48em)"
+            srcset="./images/hero-desktop.jpg"
+            class="desktop-img"
+          />
+          <img src="./images/hero-mobile.jpg" alt="" class="img" />
+        </picture>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
