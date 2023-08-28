@@ -78,7 +78,7 @@ body {
   color: var(--Desaturated-Red);
   line-height: 5.9rem;
   letter-spacing: 1.5rem;
-  margin: 9rem 0 3rem;
+  margin: 5rem 0 3rem;
 }
 
 .topic span {
@@ -110,6 +110,7 @@ body {
   height: 100%;
   outline: none;
   border: 1px solid var(--Desaturated-Red);
+  border: 2px solid red;
   border-radius: 5rem;
   padding-left: 3rem;
   font-size: 2.3rem;
@@ -124,11 +125,11 @@ body {
 
 .btn {
   position: absolute;
-  left: 65%;
+  left: 62%;
   border: none;
   outline: none;
   color: white;
-  width: 8rem;
+  width: 9rem;
   height: 100%;
   border-radius: 5rem;
   background-image: var(--Linear);
@@ -147,7 +148,7 @@ body {
 
 .error-icon {
   position: absolute;
-  left: 59%;
+  left: 57%;
   top: 24%;
 }
 .error-msg {
@@ -156,11 +157,13 @@ body {
   top: 7rem;
   font-size: 1.8rem;
   color: var(--Desaturated-Red);
+  color: red;
   /* display: none; */
 }
 
-.error-icon {
-  display: none;
+.error-icon,
+.error-text {
+  display: block;
 }
 input {
   border: 2px solid hsl(0, 93%, 68%);
