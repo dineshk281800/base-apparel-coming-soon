@@ -1,3 +1,6 @@
+/**************************/
+/* BELOW 704px */
+/**************************/
 @media (max-width: 44em) {
   html {
     font-size: 62%;
@@ -62,6 +65,9 @@
   }
 }
 
+/**************************/
+/* BELOW 432px */
+/**************************/
 @media (max-width: 27em) {
   .topic {
     font-size: 3.5rem;
@@ -80,13 +86,3 @@
     font-size: 1.6rem;
   }
 }
-
-/* @media (max-width: 83em) {
-  .topic {
-    font-size: 3rem;
-    margin: 0 0 1rem;
-  }
-  .para {
-    margin: 1.5rem auto 2rem;
-  }
-} */

@@ -159,9 +159,8 @@ body {
   /* display: none; */
 }
 
-.error-icon,
-.error-text {
-  display: block;
+.error-icon {
+  display: none;
 }
 input {
   border: 2px solid hsl(0, 93%, 68%);
