@@ -73,6 +73,12 @@
   .btn {
     left: 80%;
   }
+  .error-icon {
+    left: 72%;
+  }
+  .error-msg {
+    font-size: 1.6rem;
+  }
 }
 
 /* @media (max-width: 83em) {
