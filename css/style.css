@@ -110,7 +110,6 @@ body {
   height: 100%;
   outline: none;
   border: 1px solid var(--Desaturated-Red);
-  border: 2px solid red;
   border-radius: 5rem;
   padding-left: 3rem;
   font-size: 2.3rem;
@@ -156,15 +155,14 @@ body {
   left: 3rem;
   top: 7rem;
   font-size: 1.8rem;
-  color: var(--Desaturated-Red);
+  /* color: var(--Desaturated-Red); */
   color: red;
   /* display: none; */
 }
 
-.error-icon,
-.error-text {
-  display: block;
+.error-icon {
+  display: none;
 }
-input {
+/* input {
   border: 2px solid hsl(0, 93%, 68%);
-}
+} */

@@ -42,22 +42,24 @@
             id="email"
             placeholder="Email Address"
             required
-            spellcheck="false"
-            onkeyup="validateEmail()"
+            onblur="validateEmail()"
           />
           <img
             src="./images/icon-error.svg"
             alt="error icon"
             class="error-icon"
+            id="error-icon"
           />
           <button type="submit" class="btn">
+            <!-- onclick="validateEmail()" -->
             <img
               src="images/icon-arrow.svg"
               alt="arrow-icon"
               class="arrow-icon"
             />
           </button>
-          <p class="error-msg">Please provide a valid email</p>
+          <p class="error-msg" id="error-msg"></p>
+          <!-- Please provide a valid email -->
         </form>
       </div>
       <div class="img-box">
